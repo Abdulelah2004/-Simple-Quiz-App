@@ -1,0 +1,113 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(to right, #4b6cb7, #182848);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.app {
+  background-color: #ffffff;
+  width: 100%;
+  max-width: 600px;
+  border-radius: 16px;
+  padding: 30px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+.app h1 {
+  font-size: 28px;
+  color: #2c3e50;
+  font-weight: bold;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.quiz {
+  padding: 10px 0;
+}
+
+.quiz h2 {
+  font-size: 20px;
+  color: #34495e;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.btn {
+  background: #ecf0f1;
+  color: #2c3e50;
+  font-weight: 500;
+  width: 100%;
+  border: 2px solid transparent;
+  padding: 12px;
+  margin: 8px 0;
+  text-align: center;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn:hover {
+  background: #3498db;
+  color: #fff;
+  transform: scale(1.02);
+  box-shadow: 0 5px 15px rgba(52, 152, 219, 0.3);
+}
+
+.btn.correct {
+  background-color: #2ecc71 !important;
+  color: #fff;
+  border-color: #27ae60;
+}
+
+.btn.incorrect {
+  background-color: #e74c3c !important;
+  color: #fff;
+  border-color: #c0392b;
+}
+
+#next-btn {
+  background-color: #8e44ad;
+  color: #fff;
+  font-weight: 600;
+  width: 160px;
+  border: none;
+  padding: 12px;
+  margin: 20px auto 0;
+  border-radius: 8px;
+  cursor: pointer;
+  display: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  display: block;
+}
+
+#next-btn:hover {
+  background-color: #9b59b6;
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(142, 68, 173, 0.3);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
